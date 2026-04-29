@@ -79,7 +79,7 @@ export function renderFooter() {
           <p>Rua Rio Grande do Sul, 163, Centro, Solânea - PB, CEP 58.225-000</p>
 
           <p>
-            © 2026 Marcos Antônio Advocacia. Todos os direitos reservados.
+            © 2026 Marcos Antonio Advocacia Especializada - Todos os direitos reservados.
           </p>
           <p>Desenvolvido por <a href="https://gustavogoncalvesdev.vercel.app/" target="_blank">Gustavo Gonçalves</a></p>
 
