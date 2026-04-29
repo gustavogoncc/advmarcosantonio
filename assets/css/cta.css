@@ -1,0 +1,154 @@
+/* ==========================================
+   CTA SECTION AJUSTADO
+========================================== */
+
+.cta-section {
+  background: linear-gradient(135deg, var(--primary), #17484e);
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* BOLHAS DECORATIVAS */
+
+.cta-section::before {
+  content: "";
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  position: absolute;
+  top: -80px;
+  left: -80px;
+}
+
+.cta-section::after {
+  content: "";
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(197,164,109,0.08);
+  position: absolute;
+  bottom: -90px;
+  right: -90px;
+}
+
+
+/* ==========================================
+   BOX PRINCIPAL
+========================================== */
+
+.cta-box {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 70px 60px;
+  max-width: 920px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+
+/* ==========================================
+   MINI TITLE
+========================================== */
+
+.cta-box .mini-title {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.cta-title {
+  font-size: 48px;
+  color: var(--dark);
+  line-height: 1.2;
+  max-width: 700px;
+  margin: auto auto 18px auto;
+}
+
+
+/* ==========================================
+   DESCRIÇÃO
+========================================== */
+
+.cta-description {
+  font-size: 17px;
+  color: var(--text);
+  max-width: 620px;
+  margin: auto auto 34px auto;
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   BOTÃO
+========================================== */
+
+.cta-button {
+  background: var(--gold);
+  color: var(--white);
+  padding: 16px 34px;
+  border-radius: 50px;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.cta-button:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 991px) {
+
+  .cta-box {
+    padding: 55px 35px;
+  }
+
+  .cta-title {
+    font-size: 38px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .cta-section {
+    padding: 80px 0;
+  }
+
+  .cta-box {
+    padding: 40px 24px;
+    border-radius: 18px;
+  }
+
+  .cta-title {
+    font-size: 30px;
+  }
+
+  .cta-description {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+}

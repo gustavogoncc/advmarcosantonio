@@ -1,0 +1,103 @@
+/* ==========================================
+   ÁREAS DE ATUAÇÃO
+========================================== */
+
+.areas-section {
+  background: var(--light);
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.area-card {
+  height: 100%;
+  text-align: left;
+}
+
+.area-card h4 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.area-card p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   ÍCONE
+========================================== */
+
+.icon-area {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: rgba(30, 92, 99, 0.08);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+
+/* ==========================================
+   TEXTO EXTRA
+========================================== */
+
+.areas-extra {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.areas-extra p {
+  font-size: 16px;
+  color: var(--text);
+}
+
+
+/* ==========================================
+   HOVER PREMIUM
+========================================== */
+
+.area-card:hover h4 {
+  color: var(--primary);
+}
+.area-card:hover .icon-area {
+  background: var(--primary);
+  color: var(--white);
+}
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 991px) {
+
+  .areas-section .section-title p {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .area-card {
+    text-align: center;
+    padding: 28px;
+  }
+
+  .icon-area {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .area-card h4 {
+    font-size: 22px;
+  }
+
+}

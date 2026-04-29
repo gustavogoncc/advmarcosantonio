@@ -1,0 +1,92 @@
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq-section {
+  background: var(--white);
+}
+
+
+/* ==========================================
+   ACCORDION GERAL
+========================================== */
+
+.faq-section .accordion {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section .accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+}
+
+
+/* ==========================================
+   BOTÃO PERGUNTA
+========================================== */
+
+.faq-section .accordion-button {
+  background: var(--white);
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 17px;
+  padding: 22px 24px;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background: rgba(30, 92, 99, 0.05);
+  color: var(--primary);
+}
+
+
+/* seta bootstrap */
+
+.faq-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+
+/* ==========================================
+   RESPOSTA
+========================================== */
+
+.faq-section .accordion-body {
+  padding: 0 24px 24px 24px;
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.faq-section .accordion-item:hover {
+  border-color: var(--gold);
+}
+
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 576px) {
+
+  .faq-section .accordion-button {
+    font-size: 15px;
+    padding: 18px 18px;
+  }
+
+  .faq-section .accordion-body {
+    padding: 0 18px 18px 18px;
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,395 @@
+/* =====================================================
+   IMPORTAÇÃO DOS ARQUIVOS CSS
+===================================================== */
+
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./areas.css');
+@import url('./sobre.css');
+@import url('./diferenciais.css');
+@import url('./cta.css');
+@import url('./faq.css');
+@import url('./footer.css');
+@import url('./responsive.css');
+
+
+/* =====================================================
+   GOOGLE FONTS (MODERNO + CLEAN)
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+/* =====================================================
+   RESET GLOBAL
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   VARIÁVEIS DO PROJETO
+===================================================== */
+
+:root {
+  --white: #ffffff;
+  --light: #f5f5f5;
+  --gold: #C5A46D;
+  --primary: #1e5c63;
+  --dark: #111111;
+  --text: #5f5f5f;
+  --border: #ebebeb;
+
+  --title-font: 'Manrope', sans-serif;
+  --text-font: 'Plus Jakarta Sans', sans-serif;
+
+  --transition: 0.3s ease;
+  --radius: 16px;
+}
+
+
+/* =====================================================
+   HTML / BODY
+===================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--text-font);
+  background: var(--white);
+  color: var(--dark);
+  overflow-x: hidden;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+  color: var(--dark);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0;
+  letter-spacing: -0.5px;
+}
+
+p {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+
+/* =====================================================
+   LISTAS
+===================================================== */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* =====================================================
+   IMAGENS
+===================================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =====================================================
+   SECTION PADRÃO
+===================================================== */
+
+section {
+  padding: 110px 0;
+  position: relative;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+  max-width: 1240px;
+}
+
+
+/* =====================================================
+   MINI TITLE
+===================================================== */
+
+.mini-title {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-bottom: 14px;
+}
+
+
+/* =====================================================
+   TÍTULO DE SEÇÃO
+===================================================== */
+
+.section-title h2 {
+  font-size: 46px;
+  margin-bottom: 14px;
+}
+
+.section-title p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 17px;
+}
+
+
+/* =====================================================
+   BOTÕES BASE
+===================================================== */
+
+.btn-primary-custom,
+.btn-secondary-custom,
+.btn-header,
+.footer-btn,
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   BOTÃO PRIMÁRIO
+===================================================== */
+
+.btn-primary-custom,
+.btn-header,
+.footer-btn {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary-custom:hover,
+.btn-header:hover,
+.footer-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BOTÃO SECUNDÁRIO
+===================================================== */
+
+.btn-secondary-custom {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary-custom:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+
+/* =====================================================
+   CTA BUTTON
+===================================================== */
+
+.cta-button {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.cta-button:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+
+/* =====================================================
+   CARDS PADRÃO
+===================================================== */
+
+.area-card,
+.diferencial-card,
+.cta-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 34px;
+  transition: var(--transition);
+}
+
+.area-card:hover,
+.diferencial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.05);
+  border-color: rgba(197,164,109,0.45);
+}
+
+
+/* =====================================================
+   ÍCONES
+===================================================== */
+
+.icon-area,
+.icon-box {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+
+
+/* =====================================================
+   FORMULÁRIOS
+===================================================== */
+
+input,
+textarea,
+button {
+  transition: var(--transition);
+  outline: none;
+}
+
+
+/* =====================================================
+   SELEÇÃO DE TEXTO
+===================================================== */
+
+::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 20px;
+}
+
+
+/* =====================================================
+   SOMBRA SUAVE UTILITÁRIA
+===================================================== */
+
+.shadow-soft {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+}
+
+
+/* =====================================================
+   RESPONSIVO TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+  section {
+    padding: 90px 0;
+  }
+
+  .section-title h2 {
+    font-size: 38px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+}
+
+
+/* =====================================================
+   RESPONSIVO MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 75px 0;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .section-title p {
+    font-size: 15px;
+  }
+
+  .btn-primary-custom,
+  .btn-secondary-custom,
+  .btn-header,
+  .footer-btn,
+  .cta-button {
+    width: 100%;
+    padding: 14px 24px;
+  }
+
+  .area-card,
+  .diferencial-card,
+  .cta-box {
+    padding: 26px;
+  }
+
+}

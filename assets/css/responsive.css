@@ -1,0 +1,159 @@
+/* ==========================================
+   RESPONSIVO GERAL
+========================================== */
+
+
+/* ==========================================
+   NOTEBOOK / TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  section {
+    padding: 80px 0;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .hero-title,
+  .sobre-title,
+  .cta-title {
+    font-size: 38px;
+  }
+
+  .hero-description,
+  .cta-description,
+  .sobre-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .footer-section,
+  .sobre-section,
+  .hero-section {
+    text-align: center;
+  }
+
+}
+
+
+/* ==========================================
+   TABLET / MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .hero-title,
+  .sobre-title,
+  .cta-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary-custom,
+  .btn-secondary-custom,
+  .btn-header,
+  .footer-btn,
+  .cta-button {
+    width: 100%;
+  }
+
+  .area-card,
+  .diferencial-card,
+  .cta-box {
+    padding: 26px;
+  }
+
+  .footer-logo,
+  .site-logo {
+    margin: auto;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE PEQUENO
+========================================== */
+
+@media (max-width: 576px) {
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .hero-title,
+  .sobre-title,
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .mini-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .hero-image,
+  .sobre-image {
+    border-radius: 18px;
+  }
+
+  .navbar-collapse {
+    padding: 18px;
+  }
+
+}
+
+
+/* ==========================================
+   TELAS GRANDES
+========================================== */
+
+@media (min-width: 1400px) {
+
+  .container {
+    max-width: 1320px;
+  }
+
+}

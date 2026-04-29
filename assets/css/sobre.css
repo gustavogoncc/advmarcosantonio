@@ -1,0 +1,109 @@
+/* ==========================================
+   SOBRE
+========================================== */
+
+.sobre-section {
+  background: var(--white);
+}
+
+
+/* ==========================================
+   IMAGEM
+========================================== */
+
+.sobre-image-box {
+  position: relative;
+}
+
+.sobre-image {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.07);
+  margin: auto;
+}
+
+
+/* detalhe decorativo */
+
+.sobre-image-box::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: rgba(197, 164, 109, 0.12);
+  border-radius: 24px;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  z-index: -1;
+}
+
+.sobre-image-box::after {
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: rgba(30, 92, 99, 0.08);
+  border-radius: 24px;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  z-index: -1;
+}
+
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+.sobre-title {
+  font-size: 46px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.sobre-description {
+  font-size: 16px;
+  margin-bottom: 18px;
+  max-width: 560px;
+}
+
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 991px) {
+
+  .sobre-section {
+    text-align: center;
+  }
+
+  .sobre-title {
+    font-size: 38px;
+    margin-top: 15px;
+  }
+
+  .sobre-description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sobre-image-box::before,
+  .sobre-image-box::after {
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .sobre-title {
+    font-size: 30px;
+  }
+
+  .sobre-description {
+    font-size: 15px;
+  }
+
+}
